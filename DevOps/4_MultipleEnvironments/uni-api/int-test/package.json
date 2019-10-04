@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "hippie": "^0.5.1",
-    "jsonpath": "^0.2.11"
-  }
+    "jsonpath": "^0.2.11",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
